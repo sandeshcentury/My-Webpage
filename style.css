@@ -1,63 +1,160 @@
 body {
-  display: flex;
-  justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 
 .container {
-  background-color: rgb(126, 122, 122);
   width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
 }
 
-.page {
-  width: 1050px;
-  height: 2400px;
-  margin: 0 auto;
-  position: relative;
+.items-center {
+  align-items: center;
+}
+
+header {
+  background-color: grey;
 }
 
 .bar {
-  width: 950px;
-  height: 35px;
-  position: relative;
-  left: 0px;
-  padding: 8px 5px 2px 45px;
+  padding: 15px;
   text-align: start;
-  background-color: grey;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
 .btn {
-  height: 35px;
-  width: 80px;
-  font-size: 23px;
+  height: 40px;
+  width: 120px;
+  font-size: 25px;
   background-color: grey;
   border: 1px solid grey;
+}
+
+.hero {
+  background-color: rgba(32, 31, 31, 0.85);
+}
+
+.img1 {
+  width: 650px;
+  height: 400px;
+  padding-top: 50px;
+  border-radius: 0px 0px 10px 10px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .btn:hover {
   background-color: rgba(87, 83, 83, 0.842);
   color: white;
 }
-
-.imageBox {
-  width: 1050px;
-  height: 400px;
+.banner-text {
   display: flex;
-  justify-content: end;
-  background-color: rgba(32, 31, 31, 0.85);
+  flex-direction: column;
+  justify-content: center;
+}
+.banner-text h1 {
+  font-size: 50px;
+  width: 350px;
+ padding-top: 50px;
+  font-family: DM Sans;
+  font-style: normal;
+  letter-spacing: -1.7px;
+  color: rgba(212, 215, 218, 0.863);
 }
 
-.img1 {
-  width: 700px;
-  height: 350px;
-  border-radius: 0px 0px 10px 10px;
-  position: relative;
-  top: 45px;
+.banner-text p {
+  color: #fff;
+  padding-right: 150px;
+  padding-bottom: 100px;
+  font-family: DM Sans;
+  font-size: 35px;
+  font-style: oblique;
+  letter-spacing: 0.3px;
 }
 
-.name {
+.intro{
+  padding: 100px 0;
+  background-color: rgb(180, 171, 171);
+}
+
+.body-text{
+  padding-left: 90px;
+}
+
+.img2 {
+  height: 400px;
+  box-shadow: -50px -40px 3px 0px rgb(36, 35, 35);
+}
+
+.body-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.body-text u {
+  font-size: 45px;
+  word-spacing: 10px;
+  padding-left: 10px;
+  padding-bottom: 100px;
+
+}
+
+.body-text b {
+  font-size: 35px;
+  font-style: normal;
+  letter-spacing: 0.2px;
+  color: rgb(44, 42, 42);
+}
+
+.messege {
+  font-size: 32px;
+  margin-top: -40px;
+  letter-spacing: -0.9px;
+  word-spacing: 4px;
+  font-style: italic;
+}
+
+
+.body-text h1 {
+  font-size: 40px;
+  padding-left: 20px;
+  margin-top: 35px;
+  color: purple;
+}
+
+.body-text p {
+  width: 500px;
+  padding: 10px;
+  margin-left: 60px;
+  margin-top: 50px;
+  font-size: 32px;
+  letter-spacing: -1px;
+  word-spacing: 5px;
+  font-style: oblique;
+  color: aqua;
+  background-color: rgb(22, 22, 21);
+  border-radius: 10px;
+  box-shadow: -10px -10px 50px 10px rgb(27, 27, 25);
+}
+
+.line{
+  height: 60px;
+  background-color: purple;
+  font-size: 45px;
+  padding-top: 15px;
+  text-align: center;
+  word-spacing: 20px;
+  letter-spacing: 4px;
+}
+
+/* .name {
   width: 280px;
   height: 120px;
   flex-shrink: 0;
@@ -66,13 +163,6 @@ body {
   left: 60px;
 }
 
-.h1 {
-  font-size: 40px;
-  font-family: DM Sans;
-  font-style: normal;
-  letter-spacing: -1.7px;
-  color: rgba(212, 215, 218, 0.863);
-}
 
 .text {
   width: 380px;
@@ -83,106 +173,9 @@ body {
   flex-shrink: 0;
 }
 
-.h2 {
-  color: #fff;
-  font-family: DM Sans;
-  font-size: 25px;
-  font-style: oblique;
-  letter-spacing: 0.3px;
-}
 
-.intro {
-  height: 550px;
-  position: relative;
-  bottom: 180px;
-  background-color: rgba(230, 218, 218, 0.842);
-}
 
-.img2 {
-  height: 330px;
-  position: relative;
-  top: 110px;
-  left: 100px;
-  box-shadow: -50px -40px 3px 0px rgb(36, 35, 35);
-}
 
-.about {
-  height: 50px;
-  width: 180px;
-  position: relative;
-  left: 490px;
-  top: -290px;
-  font-size: 35px;
-  word-spacing: 10px;
-}
-
-.info {
-  height: 100px;
-  width: 500px;
-  position: relative;
-  top: -270px;
-  left: 500px;
-  font-size: 22px;
-  letter-spacing: -0.9px;
-  word-spacing: 4px;
-  font-style: italic;
-}
-
-.hello {
-  font-size: 25px;
-  font-style: normal;
-  letter-spacing: 0.2px;
-  color: rgb(44, 42, 42);
-}
-
-.aboutMe {
-  border: 1px solid red;
-  height: 270px;
-  width: 250px;
-  position: relative;
-  top: -220px;
-  left: 450px;
-  display: flex;
-  justify-content: center;
-}
-
-.head {
-  height: 50px;
-  width: 380px;
-  font-size: 32px;
-  color: purple;
-  text-align: center;
-  position: relative;
-  top: -240px;
-  left: 500px;
-}
-
-.hobbies {
-  height: 120px;
-  width: 450px;
-  padding: 10px;
-  position: relative;
-  top: -210px;
-  left: 570px;
-  font-size: 28px;
-  letter-spacing: -1px;
-  word-spacing: 5px;
-  font-style: oblique;
-  color: aqua;
-  background-color: rgb(22, 22, 21);
-  border-radius: 10px;
-  box-shadow: -10px -10px 50px 10px rgb(27, 27, 25);
-}
-
-.headBox {
-  background-color: purple;
-  height: 70px;
-  position: relative;
-  top: -180px;
-  padding: 15px 0px 0px 0px;
-  font-size: 45px;
-  text-align: center;
-}
 
 .box {
   border: 5px solid red;
@@ -210,4 +203,4 @@ body {
   top: 170px;
   left: 50px;
   box-shadow: -10px -10px 20px 5px grey;
-}
+} */ */
